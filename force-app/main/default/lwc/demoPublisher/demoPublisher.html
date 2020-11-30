@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Contact List LWC">
+        <p class="slds-p-horizontal_small">
+            <template for:each={contactList} for:item="contact">
+                <div key={contact.Id}> 
+                    <a href="#"  data-value={contact.Id} onclick={handleClick}>{contact.Name}</a>
+                </div>
+            </template>
+        </p>
+    </lightning-card>
+</template>
